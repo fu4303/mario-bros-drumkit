@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Super Drum Bros. (FCC)</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Thanks to Wes Bos for help with this project. It is based off of the first project in the Javascript30 challenge at javascript30.com
+
+Also thanks to The Mushroom Kingdom :  http://themushroomkingdom.net/media/smb/wav for the sound clips for this project.
+
+And for the background to some unknown author. It was posted on multiple sites claiming free to use. 
+-->
+
+<div id="drum-machine">
+  <div id="display">
+  <div id="display-box">Super Drum Bros.</div>
+  </div><!-- end #display -->
+   
+  <div class="keys">
+    
+    <div data-key="81" class="keyButton" >
+      <kbd id="1-Up" class="drum-pad">Q
+      <audio id="Q" class="clip" data-key="81" 
+             src="https://goo.gl/cGVEVD"></audio>
+      </kbd>
+      <span class="sound">1-Up</span>
+    </div>
+    
+    <div data-key="87" class="keyButton">
+      <kbd id="coin" class="drum-pad">W
+      <audio id="W" class="clip" data-key="87"
+             src="https://goo.gl/pjcskJ"></audio>
+      </kbd>
+      <span class="sound">coin</span>
+    </div>
+    
+    <div data-key="69" class="keyButton">
+      <kbd id="powerup" class="drum-pad">E
+      <audio id="E" class="clip" data-key="69" 
+             src="https://goo.gl/KX2EOA"></audio>
+      </kbd>
+      <span class="sound">powerup</span>
+    </div>
+    
+    <div data-key="65" class="keyButton">
+      <kbd id="jump" class="drum-pad">A
+      <audio id="A" class="clip" data-key="65" 
+             src="https://goo.gl/x4YUzU"></audio>
+      </kbd>
+      <span class="sound">jump</span>
+    </div>
+    
+    <div data-key="83" class="keyButton">
+      <kbd id="fireball" class="drum-pad">S
+        <audio id="S" class="clip" data-key="83" 
+               src="https://goo.gl/gT4zqy"></audio>
+      </kbd>
+      <span class="sound">fireball</span>
+    </div>
+    
+    <div data-key="68" class="keyButton">
+      <kbd id="kick" class="drum-pad">D
+        <audio id="D" class="clip" data-key="68" 
+               src="https://goo.gl/w34Pfy"></audio>
+      </kbd>
+      <span class="sound">kick</span>
+    </div>
+    
+    <div data-key="90" class="keyButton">
+      <kbd id="stomp" class="drum-pad">Z
+          <audio id="Z" class="clip" data-key="90" 
+                 src="https://goo.gl/t9MdrG"></audio>
+      </kbd>
+      <span class="sound">stomp</span>
+    </div>
+    
+    <div data-key="88" class="keyButton">
+      <kbd id="pipe" class="drum-pad">X
+        <audio id="X" class="clip" data-key="88" 
+               src="https://goo.gl/eoBhK9"></audio>
+      </kbd>
+      <span class="sound">pipe</span>
+    </div>
+    
+    <div data-key="67" class="keyButton">
+      <kbd id="dies" class="drum-pad">C
+        <audio id="C" class="clip" data-key="67" 
+               src="https://goo.gl/MW3jmc"></audio>
+      </kbd>
+      <span class="sound">dies</span>
+    </div>
+    
+  </div>
+
+  
+</div><!-- end #drum-machine -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
