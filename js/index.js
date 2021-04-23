@@ -30,7 +30,7 @@ keys.forEach(function (key) {
 
   key.addEventListener('click', function (e) {
     //console.log(e.path[1].dataset.key);
-    e.keyCode = e.path[1].dataset.key;
+    e.keyCode = e.composedPath[1].dataset.key;
     playSound(e);
   });
 });
